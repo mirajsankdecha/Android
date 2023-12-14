@@ -90,7 +90,7 @@ To set up and run the project, follow these steps:
 1. **Clone the Repository:** Use the following command to clone the project repository to your local machine:
 
    ```bash
-   https://github.com/mirajsankdecha/Android.git
+   git clone https://github.com/mirajsankdecha/Android.git
 2.**Open the Project in Android Studio:**
 - Open Android Studio on your local machine.
 - Click on "File" in the menu bar.
