@@ -17,13 +17,7 @@
         android:textStyle="bold"
         android:layout_margin="10dp"
         android:text="Registration Form" />
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Full Name"
-        android:inputType="textPersonName" />
+
 
     <EditText
         android:id="@+id/editTextTextPassword"

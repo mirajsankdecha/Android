@@ -11,38 +11,40 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Toast"
         tools:targetApi="31">
+        <activity
+            android:name=".Radio_Checkbox_Label"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <!-- The main launcher activity -->
         <activity
             android:name=".IntentFirstActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- Other activities -->
+        </activity> <!-- Other activities -->
         <activity
             android:name=".IntentSecondActivity"
             android:exported="true" />
-
         <activity
             android:name=".TextSize"
             android:exported="false" />
-
         <activity
             android:name=".Registration"
             android:exported="false" />
-
         <activity
             android:name=".Login"
             android:exported="false" />
-
         <activity
             android:name=".MainActivity"
             android:exported="true" />
-
     </application>
 
 </manifest>
