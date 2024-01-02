@@ -12,11 +12,8 @@
         android:theme="@style/Theme.Toast"
         tools:targetApi="31">
         <activity
-            android:name=".Imp_and_Exp_Intent_2"
-            android:exported="false" />
-        <activity
-            android:name=".Imp_and_Exp_Intent"
-            android:exported="true">
+            android:name=".Calculator"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,11 +21,19 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".Imp_and_Exp_Intent_2"
+            android:exported="false" />
+        <activity
+            android:name=".Imp_and_Exp_Intent"
+            android:exported="false">
+
+        </activity>
+        <activity
             android:name=".Radio_Checkbox_Label"
-            android:exported="false"></activity> <!-- The main launcher activity -->
+            android:exported="false" /> <!-- The main launcher activity -->
         <activity
             android:name=".IntentFirstActivity"
-            android:exported="true"></activity> <!-- Other activities -->
+            android:exported="true" /> <!-- Other activities -->
         <activity
             android:name=".IntentSecondActivity"
             android:exported="true" />

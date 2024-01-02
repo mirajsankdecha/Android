@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/calculatorTitle"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Calculator" />
+
+    <EditText
+        android:id="@+id/operand1EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/calculatorTitle"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Operand 1"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/operand2EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/operand1EditText"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Operand 2"
+        android:inputType="textPersonName"/>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Addition"
+        android:textAllCaps="false"
+        android:layout_below="@id/operand2EditText"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/subtractButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subtract"
+        android:textAllCaps="false"
+        android:layout_below="@id/addButton"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/multiplyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multiply"
+        android:textAllCaps="false"
+        android:layout_below="@id/subtractButton"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/divideButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Divide"
+        android:textAllCaps="false"
+        android:layout_below="@id/multiplyButton"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:textAllCaps="false"
+        android:layout_below="@id/divideButton"
+        android:layout_marginTop="8dp"/>
+
+</RelativeLayout>
