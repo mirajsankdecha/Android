@@ -12,23 +12,23 @@
         android:theme="@style/Theme.Toast"
         tools:targetApi="31">
         <activity
-            android:name=".Radio_Checkbox_Label"
-            android:exported="true">
+            android:name=".Imp_and_Exp_Intent"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- The main launcher activity -->
+        <activity
+            android:name=".Radio_Checkbox_Label"
+            android:exported="false">
+
+        </activity> <!-- The main launcher activity -->
         <activity
             android:name=".IntentFirstActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity> <!-- Other activities -->
         <activity
             android:name=".IntentSecondActivity"
