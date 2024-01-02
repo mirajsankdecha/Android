@@ -31,6 +31,7 @@ public class Imp_and_Exp_Intent extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(),Imp_and_Exp_Intent_2.class);
                 String name = e1.getText().toString();
+                i.putExtra("name",name);
                 startActivity(i);
             }
         });
