@@ -17,6 +17,7 @@
         <activity
             android:name=".Progress_Bar"
             android:exported="false"/>
+
         <activity
             android:name=".Calculator"
             android:exported="false"/>
@@ -28,10 +29,19 @@
             android:exported="false" />
         <activity
             android:name=".Radio_Checkbox_Label"
-            android:exported="false" /> <!-- The main launcher activity -->
+            android:exported="false" />
+        <activity
+            android:name=".Date_and_Time_Picker"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".IntentFirstActivity"
-            android:exported="true" /> <!-- Other activities -->
+            android:exported="true" />
         <activity
             android:name=".IntentSecondActivity"
             android:exported="true" />
