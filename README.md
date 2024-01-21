@@ -1,5 +1,5 @@
 <h1 align="center">
-<a href="https://portfolio-master-sable-seven.vercel.app/" target="_blank">
+<a href="https://mirajsankdecha.vercel.app/" target="_blank">
 <img src="https://cdn.neowin.com/news/images/uploaded/2023/04/1681430710_android-studio-logo-hero_itvlb9sxwyxu.jpg" alt="Miraj Sankdecha Portfolio" width="300">
 </a>
 <br>
@@ -7,7 +7,7 @@ Miraj Sankdecha
 </h1>
 
 <p align="center">
-<a href="https://miraj-sankdecha.vercel.app/" target="_blank">
+<a href="https://mirajsankdecha.vercel.app/" target="_blank">
 <img src="https://img.shields.io/badge/Website-DC143C?style=for-the-badge&logo=medium&logoColor=white" alt="Miraj Sankdecha Website" />
 </a>
 <a href="https://www.linkedin.com/in/mirajsankdecha/" target="_blank">
