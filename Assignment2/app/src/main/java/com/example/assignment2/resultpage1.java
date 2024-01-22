@@ -36,7 +36,33 @@ public class resultpage1 extends AppCompatActivity {
                 int aspp = Integer.parseInt(asp.getText().toString());
                 int lvll = Integer.parseInt(lvl.getText().toString());
                 int css = Integer.parseInt(cs.getText().toString());
-                
+
+                int total = pyy+mernn+add+aspp+lvll+css;
+                double per = (total/6)*5;
+
+                String result;
+                if(per>=40)
+                {
+                    result = "pass";
+                }
+                else
+                {
+                    result = "fail";
+                }
+
+                i.putExtra("namee", nam);
+                i.putExtra("enrollnum", enoo);
+                i.putExtra("py", pyy);
+                i.putExtra("mern", mernn);
+                i.putExtra("adroid", add);
+                i.putExtra("asp", aspp);
+                i.putExtra("laravel", lvll);
+                i.putExtra("cs", css);
+                i.putExtra("totalMarks", total);
+                i.putExtra("percentage", per);
+                i.putExtra("result", result);
+
+                startActivity(i);
             }
         });
     }
