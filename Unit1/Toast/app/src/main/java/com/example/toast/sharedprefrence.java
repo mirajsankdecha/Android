@@ -16,6 +16,7 @@ public class sharedprefrence extends AppCompatActivity {
         editor.putString("Name","Miraj Sankdecha");
         editor.putInt("Enrollment",210801300);
         editor.putString("Class","C4");
+        editor.putString("Course","BCA");
         editor.commit();
     }
 }
