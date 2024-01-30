@@ -15,6 +15,7 @@ public class sharedprefrence extends AppCompatActivity {
         SharedPreferences.Editor editor = sp.edit();
         editor.putString("Name","Miraj Sankdecha");
         editor.putInt("Enrollment",210801300);
+        editor.putString("Class","C4");
         editor.commit();
     }
 }
