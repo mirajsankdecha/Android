@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Toast"
         tools:targetApi="31">
         <activity
+            android:name=".TableLayoutt"
+            android:exported="false" />
+        <activity
             android:name=".FrameLayout"
             android:exported="false" />
         <activity
