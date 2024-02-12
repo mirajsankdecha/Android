@@ -1,7 +1,6 @@
 package com.example.toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -11,21 +10,12 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 public class Spinerr extends AppCompatActivity {
-    //String ct[] = {"Rajkot","Baroda","Surat","Dwarka","Gandhinagar","Ahmedabad","Una"};
+     String ct[] = {"Rajkot", "Baroda", "Surat", "Dwarka", "Gandhinagar", "Ahmedabad", "Una"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spinerr);
-
-        Button gb = findViewById(R.id.go_main);
-        gb.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), Home_Page.class);
-                startActivity(i);
-            }
-        });
 
         Spinner sp = findViewById(R.id.ct_spinner);
         // ArrayAdapter<String> adpt = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, ct);
@@ -42,6 +32,15 @@ public class Spinerr extends AppCompatActivity {
 
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
+            }
+        });
+
+        Button goMainButton = findViewById(R.id.go_main);
+        goMainButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // No Intent, as requested
+                // Handle any other action if needed
             }
         });
     }
