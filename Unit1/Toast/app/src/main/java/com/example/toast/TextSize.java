@@ -14,7 +14,7 @@ public class TextSize extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_text_size);
         t1 = findViewById(R.id.lblname);
-        textSize = t1.getTextSize();
+        
     }
     public void Inc(View view)
     {
