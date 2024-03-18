@@ -21,9 +21,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CRUD_Demo"
-            android:exported="false" />
-        <activity
             android:name=".TableLayoutt"
             android:exported="false" />
         <activity
