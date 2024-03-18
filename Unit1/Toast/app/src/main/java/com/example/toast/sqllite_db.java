@@ -43,5 +43,21 @@ public class sqllite_db extends AppCompatActivity {
                 }
             }
         });
+        update.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String id = tv1.getText().toString();
+                String name = tv2.getText().toString();
+                db.updateData(id,name);
+            }
+        });
+        delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String id = tv1.getText().toString();
+                String name = tv2.getText().toString();
+                db.deleteData(id,name);
+            }
+        });
     }
 }

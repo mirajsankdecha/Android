@@ -37,4 +37,18 @@ public class DBHelper extends SQLiteOpenHelper {
         Cursor c = db.rawQuery("SELECT * FROM STUDENT",null);
         return c;
     }
+
+    public void updateData(String Id,String Name)
+    {
+        SQLiteDatabase db = getWritableDatabase();
+        ContentValues cv = new ContentValues();
+        cv.put("ID",Id);
+        cv.put("NAME",Name);
+        db.update("STUDENT",cv,"ID=?",new String []{Id});
+    }
+    public void deleteData(String Id,String Name)
+    {
+        SQLiteDatabase db = getWritableDatabase();
+        db.delete("STUDENT","ID=?",new String []{Id});
+    }
 }
