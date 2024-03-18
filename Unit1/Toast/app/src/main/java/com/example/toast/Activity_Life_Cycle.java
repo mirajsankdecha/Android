@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
-public class app_Life_cycle extends AppCompatActivity {
+public class Activity_Life_Cycle extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

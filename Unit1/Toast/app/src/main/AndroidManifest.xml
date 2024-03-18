@@ -12,6 +12,15 @@
         android:theme="@style/Theme.Toast"
         tools:targetApi="31">
         <activity
+            android:name=".sqllite_db"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".CRUD_Demo"
             android:exported="false" />
         <activity
@@ -24,16 +33,7 @@
             android:name=".RelativeLayoutt"
             android:exported="false" />
         <activity
-            android:name=".ToggleButtonn"
-            android:exported="false" />
-        <activity
             android:name=".ActivityLifeCycle"
-            android:exported="false" />
-        <activity
-            android:name=".ImageViews"
-            android:exported="false" />
-        <activity
-            android:name=".Spinerr"
             android:exported="false" />
         <activity
             android:name=".AutoCompTV"
