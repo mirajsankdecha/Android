@@ -2,6 +2,7 @@ package com.example.toast;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -29,5 +30,11 @@ public class DBHelper extends SQLiteOpenHelper {
         cv.put("ID",Id);
         cv.put("NAME",Name);
         db.insert("STUDENT",null,cv);
+    }
+
+    public Cursor displayData() {
+        SQLiteDatabase db = getWritableDatabase();
+        Cursor c = db.rawQuery("SELECT * FROM STUDENT",null);
+        return c;
     }
 }

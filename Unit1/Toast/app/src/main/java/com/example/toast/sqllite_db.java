@@ -2,6 +2,7 @@ package com.example.toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,6 +30,17 @@ public class sqllite_db extends AppCompatActivity {
                 String id = tv1.getText().toString();
                 String name = tv2.getText().toString();
                 db.insertData(id,name);
+            }
+        });
+
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Cursor c =db.displayData();
+                while(c.moveToNext())
+                {
+                    tv0.setText(c.getString(0)+"\t"+ c.getString(1));
+                }
             }
         });
     }
